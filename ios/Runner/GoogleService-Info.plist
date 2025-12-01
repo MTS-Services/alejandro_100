@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>508546222147-h4676bg49jp836bt5rlaib7dhdsdtua6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.508546222147-h4676bg49jp836bt5rlaib7dhdsdtua6</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>508546222147-04jj1urqieq909oms6lo9d1c2dn760v0.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyACby05KRPHODZnqzYA_iTksAWvACrupV0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>508546222147</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ios.lock.customer</string>
+	<key>PROJECT_ID</key>
+	<string>lock-628be</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lock-628be.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:508546222147:ios:adf08fecb0ee3196766cf6</string>
+	<key>DATABASE_URL</key>
+	<string>https://lock-628be-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

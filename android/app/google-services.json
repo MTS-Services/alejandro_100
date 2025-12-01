@@ -1,0 +1,211 @@
+{
+  "project_info": {
+    "project_number": "508546222147",
+    "firebase_url": "https://lock-628be-default-rtdb.firebaseio.com",
+    "project_id": "lock-628be",
+    "storage_bucket": "lock-628be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508546222147:android:3d2c580372ca8d6e766cf6",
+        "android_client_info": {
+          "package_name": "com.lock.customer.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508546222147-0oaj2prpdk4m99hmvgnimjfdcctbb29f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "2705cd8dc96f27a69730cf3165c5c84d2c79422f"
+          }
+        },
+        {
+          "client_id": "508546222147-3keoo9u691tumu59e4a8692ak46pa2r3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "a9652cbe9aa58716d16b8288d9940b8e0c01868b"
+          }
+        },
+        {
+          "client_id": "508546222147-9tq70v6isui8gaj7vfd6ocf9ofvlabsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "fd9f52a41fbd09e07189bf1cf98b176612a69337"
+          }
+        },
+        {
+          "client_id": "508546222147-c0oiqerbbmno557cpbmdtc08hd2phd4l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "2ae092f3ba7b161914698e63780a1f43057ed160"
+          }
+        },
+        {
+          "client_id": "508546222147-dm0oe7ioset1su4tmka6ev0ncam08148.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "0bc548107fb1b7878150cdeee7c66a711884f758"
+          }
+        },
+        {
+          "client_id": "508546222147-srj32v9oh9l4jb1pdemtpcgfifeat97h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "c64e08460471b7064b6b88989a5a5cd5aedefb23"
+          }
+        },
+        {
+          "client_id": "508546222147-svbeh8oiccg82ecne3ga4gak5q43piq0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "501b66796c9b68670515da00292bacc535661a6f"
+          }
+        },
+        {
+          "client_id": "508546222147-tce0135opbe9dpbp0fsckjt0hsq80niu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "ef82452d635c7420ebbd931630fcb0bcd3ca96b9"
+          }
+        },
+        {
+          "client_id": "508546222147-vg71as165n6mou8ou7ksuujrttfj08qf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.customer.android",
+            "certificate_hash": "98b4107d19c58c35d5bf39db8607c385ac9adff9"
+          }
+        },
+        {
+          "client_id": "508546222147-nnk1em2lvj632p9u50kc6elm5rjilks1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhI0sc3h5lN-JnEE5AV_-v12Bz86FB9ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508546222147-nnk1em2lvj632p9u50kc6elm5rjilks1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508546222147-3nf2fkscnqs17kqnl2orepgdvkuhf74l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ios.lock.driver"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508546222147:android:74a093ae234e0485766cf6",
+        "android_client_info": {
+          "package_name": "com.lock.driver.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508546222147-04jj1urqieq909oms6lo9d1c2dn760v0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.driver.android",
+            "certificate_hash": "fcd45ee290d89f29f3774a01e47469d67bb9b0c8"
+          }
+        },
+        {
+          "client_id": "508546222147-25gjd5o7m7s4ve029r8551b8ki2rfo2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.driver.android",
+            "certificate_hash": "0bc548107fb1b7878150cdeee7c66a711884f758"
+          }
+        },
+        {
+          "client_id": "508546222147-fnem3m3flmf9vdtgrnj8c4i2eolgaeru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.driver.android",
+            "certificate_hash": "2ae092f3ba7b161914698e63780a1f43057ed160"
+          }
+        },
+        {
+          "client_id": "508546222147-h4sk4c07gt111tc4n7ieg8udsr6k5e90.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.driver.android",
+            "certificate_hash": "a9652cbe9aa58716d16b8288d9940b8e0c01868b"
+          }
+        },
+        {
+          "client_id": "508546222147-j3jdlrthdkavb0mn4ke3d7b0ojl90gej.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.driver.android",
+            "certificate_hash": "ef82452d635c7420ebbd931630fcb0bcd3ca96b9"
+          }
+        },
+        {
+          "client_id": "508546222147-kn6een8pcobjjs2m762fbojd8goah8e0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.driver.android",
+            "certificate_hash": "c64e08460471b7064b6b88989a5a5cd5aedefb23"
+          }
+        },
+        {
+          "client_id": "508546222147-v4ifcqeglbg9nm4j9o7hk1te2u2ln149.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lock.driver.android",
+            "certificate_hash": "55705fe65a531acabb53e03e66bd165844b57219"
+          }
+        },
+        {
+          "client_id": "508546222147-nnk1em2lvj632p9u50kc6elm5rjilks1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhI0sc3h5lN-JnEE5AV_-v12Bz86FB9ik"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "508546222147-nnk1em2lvj632p9u50kc6elm5rjilks1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "508546222147-3nf2fkscnqs17kqnl2orepgdvkuhf74l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ios.lock.driver"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
