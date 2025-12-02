@@ -19,9 +19,8 @@ class GuestInfoScreen extends StatelessWidget {
     bool isDarkMode = themeChange.getThem();
 
     return GetBuilder<GuestController>(
-      init: GuestController(),
-      builder: (controller) {
-        return Scaffold(
+      init: Get.find<GuestController>(tag: 'guest'),
+      builder: (controller) => Scaffold(
           backgroundColor: AppThemeData.primary200,
           body: SafeArea(
             child: Column(
@@ -98,7 +97,7 @@ class GuestInfoScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              controller: controller.fullNameController.value,
+                              controller: controller.fullNameController,
                               // labelText: "Full Name".tr,
                               hintText: "Enter full name".tr,
                             ),
@@ -115,7 +114,7 @@ class GuestInfoScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              controller: controller.phoneController.value,
+                              controller: controller.phoneController,
                               // labelText: "Phone Number".tr,
                               hintText: "Enter phone number".tr,
                               textInputType: TextInputType.phone,
@@ -133,7 +132,7 @@ class GuestInfoScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              controller: controller.emailController.value,
+                              controller: controller.emailController,
                               // labelText: "Email (Optional)".tr,
                               hintText: "Enter email address".tr,
                               textInputType: TextInputType.emailAddress,
@@ -151,7 +150,7 @@ class GuestInfoScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              controller: controller.idNumberController.value,
+                              controller: controller.idNumberController,
                               // labelText: "ID Number".tr,
                               hintText: "Enter ID number".tr,
                             ),
@@ -168,7 +167,7 @@ class GuestInfoScreen extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              controller: controller.addressController.value,
+                              controller: controller.addressController,
                               // labelText: "Address".tr,
                               hintText: "Enter address".tr,
                             ),
@@ -179,7 +178,7 @@ class GuestInfoScreen extends StatelessWidget {
                               onPress: () async {
                                 if (controller.validateGuestInfo()) {
                                   controller.setGuestMode(true);
-                                  controller.saveGuestInfo();
+                                  await controller.saveGuestInfo();
 
                                   Map<String, String> bodyParams = {
                                     "firstname": controller.fullNameController.value.text.trim(),
@@ -232,8 +231,7 @@ class GuestInfoScreen extends StatelessWidget {
               ],
             ),
           ),
-        );
-      },
+        ),
     );
   }
 }

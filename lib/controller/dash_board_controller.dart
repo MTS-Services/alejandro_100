@@ -47,11 +47,11 @@ class DashBoardController extends GetxController {
   void onInit() {
     print("=+++++++++========${Constant.selectedMapType}");
     print("=+++++++++========${Constant.homeScreenType}");
-    try {
-      getGuestController;
-    } catch (e) {
-      Get.put(GuestController(), tag: 'guest');
-    }
+    // try {
+    //   getGuestController;
+    // } catch (e) {
+    //   Get.put(GuestController(), tag: 'guest');
+    // }
     getUsrData();
     super.onInit();
   }
@@ -65,18 +65,27 @@ class DashBoardController extends GetxController {
   }
 
   getUsrData() async {
-    print(":::::::::::::DashBoardController:::::::::::::::");
-    String userData = Preferences.getString(Preferences.user);
+  print(":::::::::::::DashBoardController:::::::::::::::");
+  String userData = Preferences.getString(Preferences.user);
 
-    if (userData.isNotEmpty) {
-      userModel = UserModel.fromJson(jsonDecode(userData));
-      await updateToken();  // only call when user exists
+  if (userData.isNotEmpty) {
+    userModel = UserModel.fromJson(jsonDecode(userData));
+    await updateToken();
+  } 
+  else {
+    // 👇 **THIS PART WAS MISSING — LOAD GUEST USER DATA**
+    String guestData = Preferences.getString(Preferences.guestUserData);
+    if (guestData.isNotEmpty) {
+      print("✅ Loaded Guest User Data");
+      userModel = UserModel.fromJson(jsonDecode(guestData));  // FIXED
     } else {
-      print("⚠️ No user data found (guest mode)");
+      print("⚠️ No user data found at all.");
     }
-
-    await getPaymentSettingData();
   }
+
+  await getPaymentSettingData();
+}
+
 
   updateToken() async {
     // use the returned token to send messages to users from your custom server

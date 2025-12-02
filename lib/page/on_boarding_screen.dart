@@ -209,7 +209,7 @@ class OnBoardingScreen extends StatelessWidget {
                             Preferences.isFinishOnBoardingKey,
                             true,
                           );
-                          Get.offAll(
+                          Get.offAll(()=>
                             const GuestInfoScreen(),
                           );
                         },

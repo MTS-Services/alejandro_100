@@ -90,11 +90,11 @@ class ParcelServiceController extends GetxController {
   RxString walletAmount = '0'.obs;
   @override
   void onInit() {
-    try {
-      guestController;
-    } catch (e) {
-      Get.put(GuestController(), tag: 'guest');
-    }
+    // try {
+    //   guestController;
+    // } catch (e) {
+    //   Get.put(GuestController(), tag: 'guest');
+    // }
 
     getParcelCategory();
     paymentSettingModel.value = Constant.getPaymentSetting();
@@ -270,27 +270,23 @@ class ParcelServiceController extends GetxController {
         );
       }
 
-      // Check if user is in guest mode
-      bool isGuestUser = Preferences.getBoolean(Preferences.isGuestUser);
+      // 🚨 ALWAYS treat guest as REAL USER (force user order)
+      String userId = Preferences.getInt(Preferences.userId).toString();
 
-      if (isGuestUser) {
-        // For guest users, include guest information
-        request.fields['is_guest_order'] = 'true';
-        request.fields['guest_fullname'] =
-            guestController.guestUserData.value.fullName ?? '';
-        request.fields['guest_phone'] =
-            guestController.guestUserData.value.phone ?? '';
-        request.fields['guest_email'] =
-            guestController.guestUserData.value.email ?? '';
-        request.fields['guest_id_number'] =
-            guestController.guestUserData.value.idNumber ?? '';
-        request.fields['guest_address'] =
-            guestController.guestUserData.value.address ?? '';
-      } else {
-        // For regular users, include user_id
-        request.fields['user_id'] =
-            Preferences.getInt(Preferences.userId).toString();
+// Fallback: If userId is null or 0 — force login userId = 0 will fail
+      if (userId == "0" || userId.isEmpty) {
+        // try reading from guest storage
+        final guestData = Preferences.getString(Preferences.guestUserData);
+        if (guestData != null && guestData.isNotEmpty) {
+          final guestJson = jsonDecode(guestData);
+          userId = guestJson["id"].toString(); // id from guest signup
+        }
       }
+
+// FORCE: Always store order as normal user order
+      request.fields['user_id'] = userId;
+      request.fields['id_user_app'] = userId;
+      request.fields['is_guest_order'] = 'false';
 
       request.fields['lat1'] = senderLocation!.latitude.toString();
       request.fields['lng1'] = senderLocation!.longitude.toString();
@@ -344,7 +340,7 @@ class ParcelServiceController extends GetxController {
 
       if (res.statusCode == 200) {
         ShowToastDialog.closeLoader();
-        Get.offAll(const ParcelSuccessScreen());
+        Get.offAll(() => const ParcelSuccessScreen());
 
         return response;
       } else {
